@@ -53,7 +53,9 @@ const loginUser = asyncHandler(async (req, res) => {
 })
 
 const getMe = asyncHandler(async (req, res) => {
-  res.status(200).json({ hey_gay: 'u mega gay - get?me' })
+  const { _id, email, name } = await User.findById(req.user.id)
+
+  res.status(200).json({ id: _id, email, name })
 })
 
 const generateToken = (id) => {
