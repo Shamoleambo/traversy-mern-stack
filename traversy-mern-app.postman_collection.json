@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "ad3e6043-b3c7-484d-a18a-8e01b9a8673b",
+		"name": "traversy-mern-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "goals",
+			"item": [
+				{
+					"name": "get goals",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOGI2YjNlYWI2ODkzOTdiNGQzOGJlNyIsImlhdCI6MTY3MDkzNDAxOSwiZXhwIjoxNjczNTI2MDE5fQ.bGBPzGuETizundzFopk_ussafVqWsozULn_UPoGX44M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/goals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"goals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "set goal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOGI2YjNlYWI2ODkzOTdiNGQzOGJlNyIsImlhdCI6MTY3MDkzNDAxOSwiZXhwIjoxNjczNTI2MDE5fQ.bGBPzGuETizundzFopk_ussafVqWsozULn_UPoGX44M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "text",
+									"value": "mano",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/goals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"goals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit goal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTA4OGFmMTE1YWYxYjhmZjQ2NGI0MyIsImlhdCI6MTY3MDkzNDM3OCwiZXhwIjoxNjczNTI2Mzc4fQ.96ZDWEKRmQh65GXN1zVVvjwTHIJX9zAmMYx_efkH_Nk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "text",
+									"value": "era mano agora e truta",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/goals/63986ea10c9c91b1c76b763f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"goals",
+								"63986ea10c9c91b1c76b763f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete goal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOGI2YjNlYWI2ODkzOTdiNGQzOGJlNyIsImlhdCI6MTY3MDkzNDAxOSwiZXhwIjoxNjczNTI2MDE5fQ.bGBPzGuETizundzFopk_ussafVqWsozULn_UPoGX44M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/goals/63986ea10c9c91b1c76b763f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"goals",
+								"63986ea10c9c91b1c76b763f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "register user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "user",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "user@mail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "pass123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTczYTZkOGI3NDY0NzU3NDdhODM3ZSIsImlhdCI6MTY3MDg1NTI3NywiZXhwIjoxNjczNDQ3Mjc3fQ.sXDehnYHYcPfDJ97uAgmKipK-6O64wsDkaUEKXiIHV0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/users/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "kevin@mail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "pass123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
